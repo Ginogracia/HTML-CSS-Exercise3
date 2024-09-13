@@ -11,19 +11,19 @@ header {
     height: 200px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 40rem;
+    justify-content: space-between;
     align-items: center;
     z-index: 2;
-    position: relative;
+    position: absolute;
 }
 
 #name-text {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 1500;
     font-size: 2.3em;
-    color: #F1C40F;
+    color: #bbe675;
     cursor:default;
+    margin-left: 6rem
 }
 
 
@@ -35,33 +35,143 @@ header {
 .hamburger-part {
      width: 40px;
     height: 7px;
-    background-color: #F1C40F;
+    background-color: #4a3fd1;
     margin: 6px 0;
 }
 
 #hamburger-menu {
     cursor:pointer;
+    margin-right: 6rem
 }
 
 #hamburger-menu:hover {
-    filter: drop-shadow(0 0 0.55rem #f1c40f);
+    filter: drop-shadow(0 0 0.55rem #4a3fd1);
     transition: 0.4s;
+}
+
+section {
+    display: flex;
+    flex-direction: start;
 }
 
 
 #violet-bg {
-    height: 100vw;
-    width: 65vw;
-    background-color: #8A84D6;
-    position: absolute;
-    z-index: 1
+    height: 100vh;
+    width: 65%;
+    background-color: #4a3fd1;
+    z-index: 1;
+
 }
 
 #lime-bg {
-    height:100vw;
-    width: 35vw;
+
+    height: 100vh;
+    width: 35%;
+    background-color: #bbe675;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 20vw;
+    margin-left: 8vw;
+    font-size: 4.7vw;
+    color: #bbe675;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#short-info {
+    font-size: 2.4vw;
+    margin-left: 8vw;
+    margin-top: -3vw;
+    font-size: #bbe675;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+}
+
+#profile-picture {
+    height: 35rem;
+    width: auto;
     position: absolute;
-    background-color: #B8D489;
-    z-index: 1
+    left: 54%;
+    border-radius: 25px;
+    filter: drop-shadow(10px 0px 2px #647a3e);
+    filter: blur(10px);
 
 }
+
+
+footer {
+    display: flex;
+    flex-direction: start;
+}
+
+
+
+#lime-footer-bg {
+    height: 200px;
+    width: 35%;
+    background-color: #d0e7ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-info-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80%;
+    width: 90%;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact-info {
+    margin: 5px 0 5px 0;
+    font-size: 1.1rem;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#github-link {
+    color: orange;
+  
+}
+
+#github-link:hover {
+    color: white;
+}
+
+#linkedin-link {
+    color: #0a66c2;
+
+}
+
+#linkedin-link:hover {
+    color: white;
+}
+
+#violet-footer-bg {
+    height: 200px;
+    width: 65%;
+    background-color: #6961d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experiences {
+    color: #d0e7ab;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
