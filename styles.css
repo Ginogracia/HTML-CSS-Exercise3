@@ -1,8 +1,67 @@
 body, html {
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    justify-content: center;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40rem;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+#name-text {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 1500;
+    font-size: 2.3em;
+    color: #F1C40F;
+    cursor:default;
+}
+
+
+
+#hamburger-pos-control {
+    width: 55px;
+}
+
+.hamburger-part {
+     width: 40px;
+    height: 7px;
+    background-color: #F1C40F;
+    margin: 6px 0;
+}
+
+#hamburger-menu {
+    cursor:pointer;
+}
+
+#hamburger-menu:hover {
+    filter: drop-shadow(0 0 0.55rem #f1c40f);
+    transition: 0.4s;
+}
+
+
+#violet-bg {
+    height: 100vw;
+    width: 65vw;
+    background-color: #8A84D6;
+    position: absolute;
+    z-index: 1
+}
+
+#lime-bg {
+    height:100vw;
+    width: 35vw;
+    position: absolute;
+    background-color: #B8D489;
+    z-index: 1
+
 }
